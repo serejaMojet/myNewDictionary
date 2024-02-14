@@ -148,10 +148,37 @@ h1 {
   }
 }
 
+@media (max-width: 1100px) {
+  .scroll-to-top {
+    padding: 22px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(/images/arrow.png) no-repeat center center;
+    background-size: contain;
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      opacity: 1;
+    }
+  }
+}
+
 @media (max-width: 700px) {
   .scroll-to-top {
-    visibility: hidden;
-    height: 0;
+    padding: 15px; /* Уменьшаем отступы */
+
+    /* Убираем текст и добавляем фоновое изображение */
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(/images/arrow.png) no-repeat center center;
+    background-size: contain;
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      opacity: 1;
+    }
   }
 
   .results .results-item {
