@@ -17,16 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   wordInput.addEventListener('change', function () {
-    displayAllWords();
+    if (wordInput.value.trim() === '') {
+      // Если строка поиска пуста, то отображаем все слова
+      displayAllWords();
+    }
   });
 
   wordInput.addEventListener('input', function () {
     // При каждом вводе символа вызываем функцию поиска
     search();
-  });
-
-  wordInput.addEventListener('change', function () {
-    displayAllWords();
   });
 
   function displayAllWords() {
