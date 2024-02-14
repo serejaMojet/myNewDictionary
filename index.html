@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary with free API</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <main class="main">
+        <div class="main-img">
+          <img class="slang" src="./images/5.png" alt="" />
+          <!-- <img class="slang" src="./images/1.png" alt="" />
+          <img class="slang-2" src="./images/2.png" alt="" /> -->
+        </div>
+        <h1 class="wellcome">СЛОВАРЬ МОЛОДЕЖНОГО СЛЕНГА</h1>
+
+        <form action="" class="form">
+          <div class="form-group">
+            <input
+              type="text"
+              name="word"
+              id="word-input"
+              placeholder="Введите слово"
+              autocomplete="off"
+              value=""
+            />
+          </div>
+        </form>
+        <div class="error">Слово не найдено!</div>
+
+        <div class="results"></div>
+      </main>
+      <button class="scroll-to-top">В начало</button>
+      <footer class="footer">
+        <div class="footer">
+          <div class="footer-content"><p>© 2024 Ульянова Софья</p></div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/dictionary.js"></script>
+
+    <script src="./js/search.js"></script>
+  </body>
+</html>
