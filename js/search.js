@@ -39,13 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function search() {
-    const searchTerm = wordInput.value.toLowerCase();
+    let searchTerm = wordInput.value.trim().toLowerCase();
 
     // Очищаем предыдущие результаты и ошибки
     resultsDiv.innerHTML = '';
     errorDiv.style.display = 'none';
 
-    // Если поле ввода пустое, отображаем все слова
+    // Если поле ввода пустое после удаления пробелов, отображаем все слова
     if (searchTerm === '') {
       displayAllWords();
       return;
