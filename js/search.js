@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    // Ищем совпадения в словаре
+    // Ищем совпадения в словаре, только те слова, которые начинаются с введенных символов
     const matchingWords = Object.keys(dictionary).filter((word) =>
-      word.toLowerCase().includes(searchTerm)
+      word.toLowerCase().startsWith(searchTerm)
     );
 
     if (matchingWords.length === 0) {
