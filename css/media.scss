@@ -1,0 +1,51 @@
+@media (max-width: 1100px) {
+  .scroll-to-top {
+    font-size: 0;
+    bottom: 50px;
+    right: 10px;
+    background-color: #2887ec;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+
+    &::before {
+      content: '\2191';
+      font-size: 25px;
+      margin-right: 0px;
+    }
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .scroll-to-top {
+    font-size: 0;
+    bottom: 50px;
+    right: 10px;
+    background-color: #2887ec;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+
+    &::before {
+      content: '\2191';
+      font-size: 15px;
+      margin-right: 0px;
+    }
+  }
+  .results .results-item {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
